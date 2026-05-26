@@ -1,6 +1,6 @@
 # 🚀 Projet Streamlit
 
-Ce projet est une application développée avec **Moi meme pour la gestion du mariage de hussen**.
+Ce projet est une application développée par **Moi meme pour la gestion du mariage de hussen**.
 
 ---
 
