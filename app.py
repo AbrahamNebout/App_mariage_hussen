@@ -10,7 +10,7 @@ from data_manager import (
 )
 
 st.set_page_config(
-    page_title="💍 PCO — Hussen & Fransesca",
+    page_title="💍 PCO — Hussen & Francia",
     page_icon="💍",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -107,7 +107,7 @@ today = date.today()
 def hero():
     st.markdown("""
     <div class="hero-banner">
-      <h1>💍 Hussen Junior &amp; Fransesca 💍</h1>
+      <h1>💍 Hussen Junior &amp; Francia 💍</h1>
       <p>✨ Gestion PCO — Mariage du 1er Août 2025 ✨</p>
     </div>""", unsafe_allow_html=True)
 
@@ -140,7 +140,7 @@ with st.sidebar:
     <div style='text-align:center; padding:10px 0 20px;'>
       <div style='font-size:3rem;'>💍</div>
       <div style='color:white; font-size:1.1rem; font-weight:700; letter-spacing:1px;'>PCO Mariage</div>
-      <div style='color:#EEE8DC; font-size:0.85rem;'>Hussen &amp; Fransesca</div>
+      <div style='color:#EEE8DC; font-size:0.85rem;'>Hussen &amp; Francia</div>
       <div style='color:#EEE8DC; font-size:0.8rem; margin-top:4px;'>📅 1er Août 2025</div>
     </div>""", unsafe_allow_html=True)
 
@@ -230,7 +230,7 @@ if page == "🏠 Tableau de bord":
         st.markdown("<br>", unsafe_allow_html=True)
         section("📋 Infos clés")
         for lbl, key, defval in [
-            ("💒 Marié","Marié","Hussen Junior"),("👰 Mariée","Mariée","Fransesca"),
+            ("💒 Marié","Marié","Hussen Junior"),("👰 Mariée","Mariée","Francia"),
             ("📅 Date","Date du mariage","01/08/2025"),
             ("📍 Cérémonie","Lieu cérémonie","À définir"),
             ("🥂 Réception","Lieu réception","À définir"),
@@ -1026,7 +1026,7 @@ elif page == "⚙️ Configuration":
         st.markdown("### 👰🤵 Les mariés & infos clés")
         with st.form("config_form"):
             marie    = st.text_input("Prénom du marié",  value=config.get("Marié","Hussen Junior"))
-            mariee   = st.text_input("Prénom de la mariée", value=config.get("Mariée","Fransesca"))
+            mariee   = st.text_input("Prénom de la mariée", value=config.get("Mariée","Francia"))
             date_m   = st.text_input("Date du mariage",  value=config.get("Date du mariage","01/08/2025"))
             pco_name = st.text_input("Nom du PCO",       value=config.get("PCO",""))
             nb_inv   = st.text_input("Nombre total invités", value=config.get("Nombre invités total",""))
